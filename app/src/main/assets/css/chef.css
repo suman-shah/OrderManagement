@@ -1,0 +1,274 @@
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  background-color: #eaeaea;
+}
+
+header {
+  width: 100%;
+  background-color: #333;
+  color: white;
+  display: flex;
+  align-items: center;
+  /* padding: 10px; */
+}
+
+.logo {
+  margin: 0 1rem;
+  height: 50px;
+  margin-right: 20px;
+}
+
+h1 {
+  flex-grow: 1;
+  margin: 0;
+}
+
+.logout-btn {
+  margin: 0 1rem;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.logout-btn:hover {
+  background-color: #c82333;
+}
+
+/* main {
+  display: flex;
+  width: 100%;
+  padding: 20px;
+} */
+
+h2 {
+  margin-top: 0;
+  color: #343a40;
+}
+
+.table-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.button-row {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 100px;
+}
+
+.button-row {
+  background-color: #0056b3;
+}
+
+#orderIDHeader {
+  text-align: center;
+  margin: 4rem 0 1rem 0;
+  padding: 0;
+  /* text-align: left; */
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.orderDetails {
+  margin: 3rem 2rem;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-height: 400px; /* Set a max height for the section */
+  overflow-y: auto; /* Enable vertical scrolling */
+}
+
+.orderDetails h2,
+.orderDetails p {
+  margin: 10px 0;
+}
+
+/* .order-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.order-buttons .accept-btn {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.order-buttons .accept-btn:hover {
+  background-color: #218838;
+}
+
+.order-buttons .reject-btn {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.order-buttons .reject-btn:hover {
+  background-color: #c82333;
+}
+
+.order-buttons .ready-btn {
+  background-color: #ffc107;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.order-buttons .ready-btn:hover {
+  background-color: #e0a800;
+} */
+
+table {
+  margin: 0 auto; /* Centers the table */
+  border-collapse: collapse; /* Removes space between table cells */
+  width: 80%; /* Sets the table width to 80% of the parent container */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15); /* Adds a subtle shadow for depth */
+}
+
+th,
+td {
+  margin: 1rem 0 1rem 0;
+  border: 1px solid #ddd; /* Adds a light border to cells */
+  padding: 12px 15px; /* Adds padding for better readability */
+  text-align: left; /* Aligns text to the left */
+}
+
+th {
+  background-color: #f0f8ff; /* Sets a light background color for header cells */
+  font-weight: bold; /* Makes header text bold */
+  text-transform: uppercase; /* Transforms text to uppercase */
+}
+
+/* tr:hover {
+  background-color: #f1f1f1; 
+} */
+
+tr.button-row td {
+  padding: 8px 4px;
+  /* background-color: #f9f9f9; */
+  border: none;
+  text-align: center;
+}
+
+caption {
+  caption-side: bottom; /* Positions caption at the bottom of the table */
+  padding: 8px; /* Adds padding to the caption */
+  font-style: italic; /* Italicizes the caption text */
+  font-size: 0.9em; /* Sets font size slightly smaller than the table text */
+}
+
+/* Initial button styles */
+.status-btn {
+  padding: 10px 20px;
+  margin: 4px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 33%;
+  box-sizing: border-box;
+  transition: all 0.3s ease; /* Smooth transition for style changes */
+}
+
+/* Styles for active status */
+.active {
+  font-weight: bold;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Shadow to lift the button */
+}
+
+/* Animation for Preparing status */
+@keyframes preparing-animation {
+  0%,
+  100% {
+    background-color: #ffcc00;
+  }
+  50% {
+    background-color: #ffd633;
+  }
+}
+
+.preparing.active {
+  animation: preparing-animation 2s infinite; /* Looping animation */
+}
+
+/* Animation for Cooked status */
+@keyframes cooked-animation {
+  0%,
+  100% {
+    background-color: #00cc66;
+  }
+  50% {
+    background-color: #33d97a;
+  }
+}
+
+.cooked.active {
+  animation: cooked-animation 2s infinite; /* Looping animation */
+}
+
+/* Animation for Delivered status */
+@keyframes delivered-animation {
+  0%,
+  100% {
+    background-color: #3399ff;
+  }
+  50% {
+    background-color: #66aaff;
+  }
+}
+
+.delivered.active {
+  animation: delivered-animation 2s infinite; /* Looping animation */
+}
+
+.first-pair {
+  padding: 1rem 0;
+  background-color: #90ee90; /* Light gray */
+}
+
+.second-pair {
+  padding: 1rem 0;
+  background-color: #ffffff; /* Slightly darker gray */
+}
+
+footer {
+  width: 100%;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  /* padding: 10px; */
+  position: fixed;
+  bottom: 0;
+}
+main {
+  padding-bottom: 100px; /* Adjust this value based on the footer height */
+}

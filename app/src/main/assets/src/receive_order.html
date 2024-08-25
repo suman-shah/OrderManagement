@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="../css/waiter.css" />
+    <script src="../js/script.js" type="module" defer></script>
+    <script src="../js/auth.js"></script>
+    <!-- Include the auth.js script -->
+    <title>Add Row Example</title>
+  </head>
+  <body>
+    <header>
+      <img
+        src="../photos/orderflowlogo.png"
+        alt="OrderFlow Logo"
+        class="logo"
+      />
+      <h1>Waiter - Dining Tables</h1>
+      <button type="button" id="logout" class="logout-btn">Logout</button>
+    </header>
+    <form id="myForm">
+      <h2>Select Table</h2>
+      <select id="tableSelect">
+        <option value="">Select Table</option>
+        <option value="Table-1">Table-1</option>
+        <option value="Table-2">Table-2</option>
+        <option value="Table-3">Table-3</option>
+        <option value="Table-4">Table-4</option>
+        <option value="Table-5">Table-5</option>
+        <option value="Table-6">Table-6</option>
+        <option value="Table-7">Table-7</option>
+        <option value="Table-8">Table-8</option>
+        <option value="Table-9">Table-9</option>
+        <option value="Table-10">Table-10</option>
+      </select>
+      <button type="button" id="fetchOrdersBtn">Fetch Orders</button>
+    </form>
+    <div id="json-container"></div>
+  </body>
+</html>

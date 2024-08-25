@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/admin.css" />
+    <link rel="stylesheet" type="text/css" href="../css/buttons.css" />
+    <link rel="stylesheet" type="text/css" href="../css/dropdown_search.css" />
+    <script src="../js/dropdown_search.js" type="module" defer></script>
+    <script src="../js/admin_script.js" type="module" defer></script>
+    <script src="../js/auth.js"></script>
+    <title>Add Row Example</title>
+  </head>
+  <body>
+    <header>
+      <img
+        src="../photos/orderflowlogo.png"
+        alt="OrderFlow Logo"
+        class="logo"
+      />
+      <h1>Admin</h1>
+      <button type="button" id="logout" class="logout-btn">Logout</button>
+    </header>
+    <div class="extra-div">
+      <button id="chefStatusButton" class="form-btn extra-btn">
+        Chef Status
+      </button>
+      <button id="orderHistoryButton" class="form-btn extra-btn">
+        Order History
+      </button>
+    </div>
+    <div id="buttonsContainer"></div>
+    <div id="ordersContainer" class="table-responsive"></div>
+    <div id="ordersHistoryContainer" class="table-responsive"></div>
+    <select id="collectionSelect">
+      <option value="">Select a path</option>
+    </select>
+    <div id="dataDisplay"></div>
+    <div id="overlay"></div>
+    <div id="popup">
+      <p>Are you sure?</p>
+      <button id="yesBtn" class="button form-btn">Yes</button>
+      <button id="noBtn" class="button form-btn">No</button>
+    </div>
+  </body>
+</html>
