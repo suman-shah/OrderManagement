@@ -18,7 +18,8 @@ public class MainActivity extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
 
-        WebView webView = findViewById(R.id.webView);
-        webView.loadUrl("file:///android_asset/src/login.html");
+        WebView mywebView = findViewById(R.id.webView);
+        mywebView.getSettings().setJavaScriptEnabled(true);
+        mywebView.loadUrl("file:///android_asset/src/login.html");
     }
 }
