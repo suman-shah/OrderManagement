@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "971852262554",
+    "firebase_url": "https://resturant-order-1d2b3-default-rtdb.firebaseio.com",
+    "project_id": "resturant-order-1d2b3",
+    "storage_bucket": "resturant-order-1d2b3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:971852262554:android:3fc028a26bdae14d9e0323",
+        "android_client_info": {
+          "package_name": "com.birgunj.order_management"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDU5CZNCRRJEVr8FY87GWolMZ18KAs4Pic"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
